@@ -13,7 +13,6 @@ body {
     padding-bottom: 2rem;
 }
 
-
 #services, #services .card {
     background-color: rgb(245, 245, 245);
 }
@@ -22,6 +21,20 @@ body {
     padding-left: 5rem;
     padding-right: 5rem;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 1250px) {
+    #services .p-8 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/**
+    CSS WORKS
+**/
+#works .mask {
+    background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 /* Felicien section */
@@ -90,6 +103,10 @@ hr.little-hr-white {
     background-color: rgb(241, 241, 241);
 }
 
+#professional-team .mask {
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+
 /**
     CSS MARQUES
 **/
@@ -98,28 +115,21 @@ hr.little-hr-white {
     background-color: #F5F5F5;
 }
 
-#marques p {
+#pricing-table p {
     text-align: center;
 }
 
-#marques .block {
-    height: 5px;
-    width: 65px;
-    background-color: darkblue;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-#marques .card {
+#pricing-table .card {
     transition: all 0.3s ease-in-out;
 }
 
-#marques .card:hover {
+#pricing-table .card:hover {
     transform: translateY(-15px);
-    border-top-width: 15px solid black;
-    border-top: 10px solid black;
+}
+
+#pricing-table .btn-grey {
+    background-color: #475563;
+    color: white;
 }
 
 
@@ -192,7 +202,6 @@ hr.little-hr-white {
     color: white;
     flex: 1;
     padding: 10px;
-    border-radius: 5px;
     border-radius: 1%;
     background-color: transparent;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
@@ -202,7 +211,6 @@ hr.little-hr-white {
     color: white;
     flex: 1;
     padding: 10px;
-    border-radius: 5px;
     border-radius: 1%;
     background-color: transparent;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
@@ -215,7 +223,6 @@ hr.little-hr-white {
 
 .formulaire button {
     padding: 10px 30px;
-    border-radius: 5px;
     border-radius: 1%;
     background-color: transparent;
     color: #fff;
@@ -267,7 +274,7 @@ button:hover {
 }
 
 .footer-background-image {
-    background-image: url(img/Footer/Rectangle\ 8.png);
+    background-image: url(img/Footer/Rectangle_8.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
